@@ -1,0 +1,175 @@
+
+<!Doctype html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    
+        <title>Cricket Information</title>
+
+        <link href="css/main.css" rel="stylesheet" />
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <meta name="description" content="An Informational website on cricket sport contains rules, stats, gears, equipments and tournaments" />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="Cricket, Bat, Bowl, Wickets, top batsman, top bowlers, fastest ball delivered, top teams, cricket pads, gloves, six" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header class="header">
+            <div class="content">
+                <div class="logo">
+                    <h1 tabindex="1">Cricket Info</h1>
+                </div>
+                <img class="nav_drawer nav_drawer_opened" src="img/nav_icon.png" alt="navigation drawer" />
+                <nav tabindex="2" role="menu" class="main_navigation">
+                    <ul role="menubar">
+                        <li tabindex="2" role="menuitem"><a href="index.html">Home</a></li>
+                        <li tabindex="2" role="menuitem"><a href="gears.html">Gears</a></li>
+                        <li tabindex="2" role="menuitem"><a href="rules.html">Rules</a></li>
+                        <li tabindex="2" role="menuitem"><a href="tournaments.html">Tournaments</a></li>
+                        <li tabindex="2" role="menuitem"><a href="stats.html">Stats</a></li>
+                        <li tabindex="2" role="menuitem"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="slideshow">
+            <img id="canvas_image" src="/img/home_page_pic.jpg" alt="Cricket is a getlemen's game" />
+            <canvas id="layer01" class="layer01">
+                
+            </canvas>
+            <canvas id="layer02" class="layer02">
+
+            </canvas>
+        </section>
+
+        <section class="introduction" tabindex="3" aria-label="introduction about cricket">
+            <div class="content">
+                <section id="about_game">
+                    <h2>The Game</h2>
+                    <p tabindex="3">
+                        Cricket is a bat and ball game played between two teams.
+                        A cricket game is started with a toss, whichever captain wins the toss
+                        can decide whether he wants to bat first or bowl first.
+                        A winner team would be that who successfully chase the score the  opponent’s score
+                        or one who limits the opponent’s team to achieve that score.
+                    </p>
+                </section>
+
+                <section id="top_teams" tabindex="3">
+                    <h3 tabindex="3">Top Teams</h3>
+                    <table class="top_teams_table_home" tabindex="3">
+                        <tr>
+                            <th>Team</th>
+                            <th>Points</th>
+                            <th>Cricket Format</th>
+                        </tr>
+                        <tr>
+                            <td>Australia</td>
+                            <td>5569</td>
+                            <td>ODI Cricket</td>
+                        </tr>
+                        <tr>
+                            <td>South Africa</td>
+                            <td>3008</td>
+                            <td>Test Cricket</td>
+                        </tr>
+                        <tr>
+                            <td>Sri Lanka</td>
+                            <td>1891</td>
+                            <td>T20 Cricket</td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+            <div class="clr"></div>
+        </section>
+
+        <section tabindex="4" class="cricket_tournaments_grids" aria-label="tournaments in cricket">
+            <div class="content">
+                <h2 class="tournament_grid_heading" >Tournaments</h2>
+                <ul>
+                    <li class="tournament_grid">
+                        <a href="tournaments.html" tabindex="4">ICC Cricket World Cup</a>
+                        <p tabindex="4">50 over match played between top 14 teams of world which happens after four years</p>
+                    </li>
+
+                    <li class="tournament_grid">
+                        <a href="tournaments.html" tabindex="4">ICC World Twenty20</a>
+                        <p tabindex="4">20 over match currently being played between 16 teams and happens after 2 years</p>
+                    </li>
+
+                    <li class="tournament_grid">
+                        <a href="tournaments.html" tabindex="4">The Ashes</a>
+                        <p tabindex="4">Test matches played between England and Australia which mostly happens after an year</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="clr"></div>
+        </section>
+
+        <section class="content homepage_stats" tabindex="5" aria-label="cricket statistics">
+            <h2>In Numbers</h2>
+            <div>
+                <ul>
+                    <li class="home_stat">Most International Runs<span class="home_stat_one">34357</span><span class="home_stat_two">Sachin Tendulkar</span></li>
+                    <li class="home_stat">Most International Wickets<span class="home_stat_one">1347</span><span class="home_stat_two">M Murlidharan</span></li>
+                    <li class="home_stat">Most World Cup Wins<span class="home_stat_one">5</span><span class="home_stat_two">Australia</span></li>
+                    <li class="home_stat">Most Economical Bowler<span class="home_stat_one">3.09</span><span class="home_stat_two">J Garner (WI)</span></li>
+                    <li class="home_stat">Highest Team Total ODI<span class="home_stat_one">443</span><span class="home_stat_two">Sri Lanka</span></li>
+                    <li class="home_stat">Fastest Ball Bowled<span class="home_stat_one">161.3 KM/h</span><span class="home_stat_two">Shoib Akhtar</span></li>
+                    <li class="home_stat">Fastest Century<span class="home_stat_one">31 Balls</span><span class="home_stat_two">AB de Villiars</span></li>
+                    <li class="home_stat"> Highest Batting Average<span class="home_stat_one">99.94</span><span class="home_stat_two">Don Bradman</span></li>
+                    <li class="home_stat">Longest six hit<span class="home_stat_one">158 m</span><span class="home_stat_two">Shahid Afridi</span></li>
+                </ul>
+            </div>
+            <a href="stats.html" role="button">More Stats</a>
+            <div class="clr"></div>
+        </section>
+
+        <section class="newsletter" tabindex="6" aria-label="subscribe for updates">
+            <div class="content">
+                <p>Receive monthly cricket news and updates</p>
+                <a href="contact.html" role="button">Subscribe</a>
+            </div>
+            <div class="clr"></div>
+        </section>
+
+        <footer tabindex="1000">
+            <div class="content">
+                <ul>
+                    <li tabindex="1000"><a href="https://twitter.com/dil_singh" id="twitter_footer" class="social_icon"></a></li>
+                    <li tabindex="1000"><a href="http://nz.linkedin.com/in/dsingh94" id="linkedin_footer" class="social_icon"></a></li>
+                    <li tabindex="1000"><a href="http://dsdilpreet.github.io/" id="github_footer" class="social_icon"></a></li>
+                </ul>
+                <p>Designed by <a href="http://dsdilpreet.github.io/about.html" target="_blank">Dilpreet Singh</a></p>
+            </div>
+        </footer>
+
+  
+
+    <script src="js/navigation.js"></script>
+        <script>
+            var layer01 = document.getElementById("layer01");
+            var canvas_image = document.getElementById("canvas_image");
+            var ctx = layer01.getContext("2d");
+            ctx.canvas.width = window.innerWidth;
+            ctx.canvas.height = window.innerHeight;
+            ctx.drawImage(canvas_image, 0, 0, window.innerWidth, window.innerHeight);
+
+
+            var layer02 = document.getElementById("layer02");
+            var ctx02 = layer02.getContext("2d");
+            ctx02.canvas.width = window.innerWidth;
+            ctx02.canvas.height = window.innerHeight;
+            ctx02.font = " bold 4.5em Verdana";
+            ctx02.fillStyle = "white";
+            ctx02.textAlign = "center";
+            ctx02.fillText("Cricket", 700,350, window.innerWidth, window.innerHeight);
+            ctx02.fillText("The Gentlemen's Game",683, 450, window.innerWidth, window.innerHeight);
+        </script>
+                
+            
+      
+    </body>
+</html>
