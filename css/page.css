@@ -1,0 +1,351 @@
+
+  /*Page Content general */
+    .content h2{
+        margin-bottom:30px;
+    }
+
+
+    .content h3{
+        margin-top:40px;
+        margin-bottom:5px;
+    }
+
+    .content h4{
+        margin-top:20px;
+    }
+
+    .container img{
+        margin-top:5px;
+        margin-bottom:10px;
+}
+
+@media screen and (min-width: 830px) {
+    .container {
+        margin-top: 150px;
+        margin-bottom:150px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .container {
+        margin-top: 30px;
+    }
+}
+
+
+
+
+    /*Mobile Navigation */
+
+    .page_navbar {
+        width: 100%;
+        background-color: #77CC6D;
+        color: white;
+    }
+
+        .page_navbar h3 {
+            color: #fff;
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px;
+        }
+
+        .page_navbar:hover {
+            cursor: pointer;
+        }
+
+    .page_nav li {
+        display: list-item;
+        list-style: none;
+        padding-top: 10px;
+        padding-left:10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid gray;
+    }
+
+        .page_nav li:hover {
+            cursor: pointer;
+            background-color:#F2F3F0;
+        }
+
+    /*Mobile Navigation Ends*/
+
+/*Desktop navigation starts*/
+@media screen and (min-width: 830px) {
+    .page_navbar {
+        display: none;
+    }
+
+    .page_navigation{
+        width:25%;
+        float:left;
+        background-color:#F2F3F0;
+        padding:2%;
+        padding-top:30px;
+        padding-bottom:40px;
+        margin-top:50px;
+    }
+
+    .desktop_content{
+        float:right;
+        width:65%;
+        margin-bottom:150px;
+    }
+}
+
+
+
+    /**********************
+        Rules Page starts
+   **************************/
+
+    .match_officials ul {
+        padding-left: 20px;
+    }
+
+    .more_information ul {
+        padding-left: 20px;
+    }
+
+    .more_information li {
+        margin: 5px;
+    }
+
+    .team table{
+        margin-top: 50px;
+    }
+
+    .rules p{
+        margin-bottom:20px;
+    }
+
+    @media screen and (max-width: 830px) {
+        .ground, .match_officials, .team, .more_information, .how_to_play{
+            margin-bottom:100px;
+        }
+    }
+
+
+
+    /**********************
+        Tournaments Page starts
+   **************************/
+    .tournaments p{
+        line-height:25px;
+    }
+
+    .tournaments li{
+        padding-left: 5px;
+    }
+    .tournaments ul{
+        padding-left: 20px;
+        margin-top: 20px;
+    }
+
+    .tournament_article{
+        margin-bottom:70px;
+    }
+
+@media screen and (min-width: 830px) {
+
+    .tournaments p{
+        margin-bottom: 20px;
+    }
+
+    .tournament_article{
+        margin-bottom:100px;
+    }
+
+    .tournaments img{
+        max-width: 46%;
+    }
+
+    .left_side_image {
+        float:left;
+        margin-right:4%;
+    }
+
+    .right_side_image{
+        float:right;
+        margin-left:4%;
+    }
+}
+    /*************************
+        Stats Page start
+    ************************/
+
+    .record {
+        border: 2px solid;
+        height: 150px;
+        margin: 20px auto;
+    }
+
+    .record p{
+        margin-bottom:0px;
+    }
+
+    .stat_name {
+        font-weight:700;
+        background-color: #77CC6D;
+        color: #fff;
+        display: block;
+        padding: 5px;
+    }
+
+    .player_details {
+        float: left;
+        display:block;
+        width:100%;
+        margin-bottom:0px;
+        padding: 10px 0 10px 10px;    
+    }
+
+    .extra_details {
+        display: block;
+        padding-top:5px;
+    }
+
+    .stat {
+        float: right;
+        font-weight:700;
+        padding: 10px;
+        font-size: 1.5em;
+    }
+
+    .full_standings{
+        margin-bottom: 50px;
+    }
+
+@media screen and (max-width: 830px) {
+    .player_details {
+        margin-bottom:0px;
+    }
+
+    .record p{
+        margin-bottom:0px;
+    }
+}
+
+@media screen and (min-width: 830px) {
+
+}
+
+    /*Stats Page ends */
+
+
+
+
+
+
+    /*********************************
+        Contact Page starts
+    **********************************/
+    form {
+        width:100%;
+        margin-bottom:60px;
+    }
+
+    form label{
+        display:block;
+        margin-bottom:5px;
+    }
+
+    form li{
+        list-style:none;
+        margin-bottom:15px;
+    }
+    
+    input:hover, textarea:hover, input:focus, textarea:focus {
+	    border: 1px solid #C9C9C9;
+	    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+    }
+
+    #submit{
+        background-color:#77CC6D;
+        color:#fff;
+        font-size: 16px;
+        border-radius:0.1cm;
+    }
+
+    #submit:hover{
+        background-color:#27313D;
+        transition: background-color 0.3s linear 0s;
+        color:#77CC6D;
+    }
+
+    /*Contact details*/
+
+    .contact_info{
+        list-style:none;
+        font-size: 0.9em;
+    }
+
+    input, textarea, select {
+	    padding: 10px;
+	    border: 1px solid #E5E5E5;
+	    width: 92%;
+	    color: #999999;
+	    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;	
+    }  
+
+    textarea{
+        min-width:92%;
+        max-width:92%;
+        min-height:80px;
+        line-height:16px;
+    }
+
+
+    .contact_info li a{
+        text-decoration:none;
+        color:#6AB47B;
+        display:block;
+        min-height: 20px;
+        background-repeat: no-repeat;
+        padding: 0 0 0 30px;
+        margin: 0 0 10px 0;
+        background-size: 25px 25px;
+  
+    }
+
+     /*Contact details pics*/
+
+    .contact_info li.phone a {
+        background-image:url("../img/phone-contact.png");
+    }
+
+    .contact_info li.mail a {
+        background-image:url("../img/mail-contact.png");
+    }
+
+    .contact_info li.twitter a {
+        background-image:url("../img/twitter-contact.png");
+    }
+
+    .contact_info_section h3{
+        margin-bottom:15px;
+    }
+
+
+
+@media screen and (min-width: 830px) {
+    .contact_form_section{
+        float:left;
+        width:60%;
+        padding-left:1%;
+    }
+
+    .contact_info_section{
+        background-color:#F2F3F0;
+        float:right;
+        padding:2%;
+        padding-bottom:100px;
+        margin-top:50px;
+    }
+
+    form{
+        margin-top:50px;
+    }
+
+
+}
