@@ -1,0 +1,719 @@
+    /**********************
+     general properties
+    ***********************/
+
+    html, body{
+        width:100%;
+        height:100%;
+    }
+
+    * {
+        margin:0;
+        padding: 0;
+        font-family: Verdana, sans-serif;
+        color:#555;
+    }
+
+    img{
+        max-width:100%;
+    }
+    .clr{
+        clear: both;
+    }
+
+
+
+      /**********************
+     header general properties
+    ***********************/
+
+    .main_navigation ul {
+        list-style: none;
+        text-decoration:none;
+    }
+
+    .main_navigation a{
+        text-decoration:none;
+    }
+
+    header{
+        background-color:#F2F3F0;
+        display:block;
+        margin:0;
+    }
+
+    .logo h1 {
+        font-family: "Pacifico", Verdana;
+        font-size: 30px;
+        letter-spacing: -0.4px;
+    }
+
+    .logo{
+        float:left;
+    }
+
+        /***********
+    Header on various devices
+    ************/
+    @media screen and (max-width: 830px) {
+
+        header{
+            padding-top:20px;
+            padding-bottom:20px;
+            min-height:60px;
+        }
+
+        .logo h1{
+            padding-top:10px;
+        }
+
+        .nav_drawer {
+            float: right;
+            padding: 2%;
+            margin-top: -6px;
+        }
+
+        .nav_drawer_opened {
+            background-color: #fff;
+            padding: 2%;
+        }
+
+
+        .main_navigation {
+            display: block;
+        }
+
+            .main_navigation ul {
+                clear: both;
+            }
+
+            .main_navigation li {
+                display: block;
+                color: #444;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-bottom: 1px solid #F8F8F8;
+                background-color: #fff;
+            }
+
+                .main_navigation li:hover {
+                    background-color: #77CC6D;
+                    color: #fff;
+                }
+
+            .main_navigation a {
+                display: block;
+                width: 100%;
+            }
+    }
+
+        /*for desktop navigation*/
+    @media screen and (min-width:830px) {
+
+        .header{
+            background-color:#fff;
+            border-bottom: 1px solid #77CC6D;
+            position:fixed;
+            top:0;
+            z-index:2;
+            width:100%;
+            opacity:0.9;
+            height:auto!important;
+        }
+
+       .nav_drawer{
+        display:none;
+        }
+
+        .logo h1{
+            padding-top:20px;
+        }
+
+        .main_navigation li{
+            display:inline-block;
+        }
+
+        .main_navigation a{
+            display:inline-block;
+            padding: 0px 7px;
+            padding-top:30px;
+            font-size:1.1em;
+            height: 60px;                        
+        }
+
+        .main_navigation a:hover{
+            border-bottom: 2px solid #77CC6D;
+            background-color:#F8F8F8;
+        }
+
+        .main_navigation{
+            float:right;
+        }
+
+/*Scroll event classes*/
+        .header_scroll{
+            background-color:#fff;
+            border-bottom: 1px solid #77CC6D;
+            position:fixed;
+            top:0;
+            z-index:2;
+            width:100%;
+            opacity:0.9;
+            height:auto!important;
+        }
+
+        .main_navigation_scroll a{
+            display:inline-block;
+            padding: 0px 7px;
+            padding-top:15px;
+            font-size:1.1em;
+            height: 30px;
+        }
+
+        .logo_scroll h1{
+            padding-top:5px;
+        }
+    }
+
+    
+    
+
+    /***********
+    Content 
+    ************/
+
+    .content {
+        width: 1024px;
+        max-width: 98%;
+        margin: 0 auto;
+    }
+
+
+
+
+
+    /*For mobile devices breakpoint*/
+    @media screen and (max-width: 830px) {
+
+        .content {
+            max-width: 92%;
+        }
+
+}
+
+
+
+    /*******************************
+        Slideshow Section
+    ***************************/
+
+
+     .layer01{
+        width:100%;
+        position: absolute;
+        left: 0;
+        top:0;
+    }
+
+    .layer02{
+        width:100%;
+        left: 0;
+        top:0;
+        background-color: #27313D;
+        opacity: 0.5;
+    }
+
+    #canvas_image{
+        display:none;
+    }
+
+    canvas{
+        width:100%;
+        margin:0 auto;
+        display:block;
+        position:relative;
+    }
+
+@media screen and (min-width:830px) {
+    .slideshow {
+        clear: both;
+        margin-bottom: 50px;
+        position: relative;
+        top: 0;
+    }
+
+        /*SlideShow*/
+        .slideshow img {
+            width: 100%;
+        }
+
+        .slideshow h2 {
+            position: absolute;
+            top: 0px;
+            background-color: #27313D;
+            opacity: 0.4;
+            color: #FFF;
+            z-index: 1;
+            width: 100%;
+            text-align: center;
+            height: 100%;
+            margin: auto;
+            font-size: 3em;
+        }
+}
+
+    @media screen and (max-width:830px) {
+
+        .layer01{
+            position:relative;
+        }
+        
+        .layer02{
+            display:none;
+        }
+    }
+
+
+
+    /*******************************
+        Game Introduction Section
+        ***************************/
+
+    .introduction{
+        margin-bottom:30px;
+        display:block;
+    }
+
+
+    /*Home Page Tables*/
+
+    table{
+        width:100%;
+    }
+
+    table, th, td {
+        text-align:left;
+        border-collapse: collapse;
+        padding:1%;
+    }
+
+    th{
+        padding:1.5%;
+        font-weight:700;
+        background-color: #77CC6D;
+        color:#fff;
+    }
+
+    @media screen and (max-width:830px) {
+    
+    #about_game {
+        margin-top:30px;
+    }
+
+    #about_game p{
+        margin-top:10px;
+    }
+
+    #top_teams {
+        margin-top:15px;
+        margin-bottom:10px; 
+    }
+    
+    .top_teams_table_home{
+        margin-top:10px;
+    }
+    }
+
+    @media screen and (min-width:830px) {
+
+    /*About Game Section*/
+    #about_game {
+        float: left;
+        width: 55%;
+    }
+
+    #about_game h2{
+        margin-bottom:10px;
+    }
+
+    #about_game p{
+        line-height:25px;
+    }
+
+    /*Top Teams Section*/
+    #top_teams {
+        float: right;
+        width: 38%;
+    }
+
+    #top_teams h3{
+        margin-bottom:10px;
+    }
+
+    .introduction {
+        margin-bottom: 50px;
+    }
+
+    .top_teams_table_home {
+        width: 100%;
+    }
+}
+
+
+
+    /*******************************
+        Tournament grids Start
+        ***************************/
+
+        .cricket_tournaments_grids a{
+        text-decoration:none;
+        text-align:center;
+        background-color:#77CC6D;
+        color:#fff;
+        display: block;
+        padding:10px;
+        font-weight:700;
+    }
+
+
+    .tournament_grid{
+        border:1px solid;
+        list-style:none;
+    }
+
+    .tournament_grid p{
+        padding:2%;
+        text-align:center;
+    }
+
+
+    .cricket_tournaments_grids{
+        clear:both;
+        background-color: #F2F3F0;
+    }
+
+    .tournament_grid:hover{
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px;
+    }
+
+
+    @media screen and (min-width: 830px) {
+
+        .cricket_tournaments_grids {
+            display: block;
+            clear: both;
+            padding-bottom:50px;
+        }
+
+            .tournament_grid_heading {
+                padding-top: 50px;
+                padding-bottom:20px;
+            }
+
+            .cricket_tournaments_grids li {
+                list-style: none;
+                float: left;
+                width: 27.66%;
+                margin: 2.5%;
+            }
+
+            .tournament_grid p{
+                line-height:30px;
+                padding-top:20px;
+            }
+
+            .tournament_grid{
+                background-color:#fff;
+                border:none;
+                border-bottom: 50px solid #fff;
+            }
+
+    }
+
+    @media screen and (max-width: 830px) {
+            .tournament_grid_heading {
+                padding-top: 20px;
+                padding-bottom:20px;
+            }
+
+            .cricket_tournaments_grids{
+                padding-bottom:20px;
+            }
+
+            
+        .tournament_grid {
+                margin-bottom:20px;
+                border:none;
+                background-color:#fff;  
+        }
+
+        .tournament_grid p{
+            line-height:28px;
+        }
+
+    }
+
+
+
+    /*****************
+    Stats Section 
+    ******************/
+
+        .home_stat_one{
+        display:block;
+        color:#F8F8F8;
+        font-size:1.5em;
+        font-weight:700;
+    }
+
+    .home_stat_two{
+        display:block;
+        color:#F8F8F8;
+        color:#AAA;
+    }
+
+    .homepage_stats a{
+         text-decoration:none;
+         background-color:#77CC6D;
+         color:#f8f8f8;
+         border-radius:4px;
+         text-align:center;
+         padding: 5px 25px;
+    }
+
+    .homepage_stats a:hover{
+        background-color:#27313D;
+        transition: background-color 0.3s linear 0s;
+        color:#77CC6D;
+    }
+
+
+@media screen and (max-width:830px) {
+    .home_stat {
+        list-style: none;
+        display: block;
+        background-color: #27313D;
+        color: #77CC6D;
+        padding: 2%;
+        border-bottom: 2px solid #77CC6D;
+    }
+
+        .home_stat:nth-child(-n+5) {
+            display: none;
+        }
+
+        .home_stat:last-child {
+            border-bottom: none;
+        }
+
+        .homepage_stats{
+            margin-top:30px;
+            margin-bottom:30px;
+        }
+
+        .homepage_stats h2{
+            margin-bottom:10px;
+        }
+
+        .homepage_stats a{
+            clear:both;
+            margin-top:15px;
+            display:block;
+            padding: 5px 25px;
+
+        }
+
+
+}
+@media screen and (min-width:830px) {
+    .home_stat{
+        list-style:none;
+        float:left;
+        display:block;
+        width:29%;
+        background-color:#27313D;
+        color:#77CC6D;
+        padding:2%;
+        border-bottom:2px solid #77CC6D;
+        border-right:2px solid #77CC6D;
+    }
+
+    .home_stat:nth-child(7){
+        border-bottom:none;
+    }
+
+    .home_stat:nth-child(8){
+        border-bottom:none;
+    }
+
+    .home_stat:nth-child(9){
+        border-bottom:none;
+        border-right:none;
+    }
+
+    .home_stat:nth-child(3){
+        border-right:none;
+    }
+
+    .home_stat:nth-child(6){
+        border-right:none;
+    }
+
+    .homepage_stats{
+        margin-top:50px;
+    }
+
+    .homepage_stats h2{
+        margin-bottom:20px;
+    }
+
+    .homepage_stats a{
+        position:absolute;
+        margin-top: -53px;
+        margin-left: 877px;
+    }
+}
+
+    /*****************
+    Newsletter Section 
+    ******************/
+
+    .newsletter p{
+        text-align:center;
+    }
+
+    .newsletter a{
+        display:block;
+        text-decoration:none;
+        background-color:#77CC6D;
+        color:#f8f8f8;
+        padding: 5px 25px;
+        border-radius:4px;
+    }
+
+    .newsletter a:hover{
+        background-color:#27313D;
+        transition: background-color 0.3s linear 0s;
+        color:#77CC6D;
+    }
+
+    .newsletter{
+        margin-top: 50px;
+        margin-bottom:50px;
+    }
+
+@media screen and (max-width: 830px) {
+    .newsletter a {
+        clear: both;
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 5px 0;
+        margin-top: 10px;
+        font-weight:600;
+    }
+
+    .newsletter p {
+        text-align: center;
+        float: none;
+        font-size:1.3em;
+        font-weight:600;
+    }
+
+    .newsletter {
+        margin-top: 50px;
+    }
+}
+    @media screen and (min-width: 830px) {
+        
+        .newsletter{
+            margin-top:100px;        
+        }
+
+        .newsletter p{
+            font-size:1.5em;
+            font-weight:600;
+            
+        }
+        
+        .newsletter a{
+            margin:0 auto;
+            margin-top:30px;
+            text-align:center;
+            font-weight:600;
+            padding:0 50px;
+            padding-top:15px;
+            padding-bottom:15px;
+            width:30%;
+            
+        }
+    }
+
+
+
+    /***********
+    Footer 
+    ************/
+    footer{        
+        background-color:#F2F3F0;
+        display:block;
+        padding-top:20px;
+        padding-bottom:20px;
+        text-align:center;
+    }
+
+    footer p{
+        text-align:center;
+    }
+
+    footer a{
+        text-decoration:none;
+    }
+
+    footer a:hover{
+        color:#77CC6D;
+    }
+
+    footer li{
+        list-style:none;
+        display:inline-block;
+    }
+
+    .social_icon{
+        display:block;
+        width:48px;
+        height:50px;
+        margin:20px auto;
+        padding-left:2px;
+        background-repeat:no-repeat;
+    }
+
+    #twitter_footer{
+        background-image:url("../img/twitter.png");
+    }
+
+    #twitter_footer:hover{
+        background-image:url("../img/twitter_green.png");
+    }
+
+    #linkedin_footer{
+        background-image:url("../img/linkedin.png");
+    }
+
+    #linkedin_footer:hover{
+        background-image:url("../img/linkedin_green.png");
+    }
+
+    #github_footer{
+        background-image:url("../img/github.png");
+    }
+
+    #github_footer:hover{
+        background-image:url("../img/github_green.png");
+    }
+
+@media screen and (min-width: 830px) {
+    footer{
+        clear:both;
+    }
+}
